@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #000000;
+    overflow-x: hidden;
 }
 
 .container {
@@ -90,4 +91,19 @@ body {
 
  #icon{
     width: 23px; 
+ }
+
+ #lime_text{
+    color:#E1FF00;
+ }
+
+ #highlighted_lime{
+    color:#E1FF00; background-color: #8E8E8E;
+ }
+ 
+ #blackgray_text{
+    color:#424242;
+ }
+ #white_text{
+    color:#ffffff;
  }
