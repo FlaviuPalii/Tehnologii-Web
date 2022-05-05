@@ -1,6 +1,9 @@
 let textInput = document.querySelector(".form-text");
 let submit = document.querySelector(".form-submit");
 let allContents = document.querySelector(".form-all-comments");
+let i=0;
+let images=[];
+let time=4500;
 
 allContents.innerHTML = localStorage.getItem("comment");
 
@@ -15,9 +18,7 @@ submit.addEventListener("click", (event) => {
     }
 });
 
-let i=0;
-let images=[];
-let time=1500;
+
 images[0]="slideshow/nismo_slideshow.jpg";
 images[1]="slideshow/gtrs_slideshow.jpg";
 images[2]="slideshow/silvia_slideshow.jpg";
