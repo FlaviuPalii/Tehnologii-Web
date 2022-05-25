@@ -13,21 +13,12 @@
 
 <body>
   <div class="register-form">
-    <form action="../php/register.php" method="post" id="rgform">
+    <form action="../js/validare.js" method="post" id="rgform">
       <h1>Register</h1>
       
       <a href="../homepage.php" id="closetab">Close Tab</a>
 
-      <a id="errMsg" style="color:red">
-        <?php
-          session_start();
-          if($_SESSION['errors'] == true){
-            echo $_SESSION['errMsg'];
-            $_SESSION['errMsg'] = '';
-            $_SESSION['errors'] = false;
-          }
-        ?>
-      </a>
+      <a id="errMsg" style="color:red"></a>
 
       <div class="content">
         <div class="input-field">

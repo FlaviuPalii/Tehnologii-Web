@@ -14,18 +14,9 @@
 
   </div>
   <div class="login-form">
-    <form action="../php/login.php" method="post" id="lgform">
+    <form action="../js/validare.js" method="post" id="lgform">
       <h1>Login</h1>
-      <a id="errMsg" style="color:red">
-        <?php
-          session_start();
-          if($_SESSION['errors'] == true){
-            echo $_SESSION['errMsg'];
-            $_SESSION['errMsg'] = '';
-            $_SESSION['errors'] = false;
-          }
-        ?>
-      </a>
+      <a id="errMsg" style="color:red"></a>
       <div class="content">
         <div class="input-field">
           <input type="email" name="iemail" placeholder="Email" autocomplete="nope">

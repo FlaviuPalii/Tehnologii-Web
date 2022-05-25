@@ -37,7 +37,7 @@
              Japanese Domestic Market - HOMEPAGE
              <?php
               session_start();
-              if($_SESSION['errors'] == false && $_SESSION['conUser'] == ''){
+              if($_SESSION['conUser'] == ''){
                 echo '<a id="blackgray_text" style="float:right" href="site/login_page.php">Login</a>';
               }else{
                 echo '<a id="blackgray_text" style="float:right" href="php/logout.php">Logout</a>';

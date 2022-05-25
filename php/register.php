@@ -1,7 +1,5 @@
 <?php 
 session_start();
-$_SESSION['errors'] = true;
-$_SESSION['errMsg'] = '';
 
 if (count($_POST)){
 
@@ -13,11 +11,7 @@ if (count($_POST)){
 
     foreach($userList as $value){
         if($value->Email == $useremail){
-            $_SESSION['errors'] = true;
-            $_SESSION['errMsg'] = 'Utilizator existent!';
-            echo "<script>
-            document.location='../site/register.php';
-            </script>";
+            echo true;
             return;
         }
     }
@@ -25,11 +19,6 @@ if (count($_POST)){
     $userList[] = ['Email' => $useremail, 'Parola' => $userpassword];
     $extractJson = json_encode($userList);
     file_put_contents('../bazadedate/bdate.json', $extractJson);
-    $_SESSION['errors'] = false;
-
-    echo "<script>
-        alert('Inregistrat cu succes');
-        document.location='../site/login_page.php';
-        </script>";
+    echo false;
 }
 ?>
