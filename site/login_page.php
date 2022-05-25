@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
