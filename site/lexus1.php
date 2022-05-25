@@ -14,14 +14,9 @@
          <div class="header">
              Japanese Domestic Market - LEXUS
          </div>
-         <div class="menu">
-            <a href="../homepage.html">Home</a>
-            <a href="/site/toyota1.html">Toyota</a>
-            <a href="/site/lexus1.html">Lexus</a>
-            <a href="/site/subaru1.html">Subaru</a>
-            <a href="/site/nissan1.html">Nissan</a>
-            <a href="/site/mazda1.html">Mazda</a>
-         </div>
+         <?php
+  require('menu.php');
+  ?>
          <div class="content-large" >
             <h2 id="lime_text">What is LEXUS?</h2>
             <p style="color:#8E8E8E">&emsp;Lexus (レクサス, Rekusasu) is the luxury vehicle division 
@@ -60,7 +55,7 @@
         <a href="https://www.instagram.com/maenmobil/" id="white_text">&emsp;MAENMOBIL&emsp;</a>
         <a href="https://www.instagram.com/blackbird_pl/" id="white_text">&emsp;BLACKBIRD_PL&emsp;</a>
         <a href="https://www.instagram.com/explore/tags/bippu/" id="white_text">&emsp;#BIPPU&emsp;</a>
-        <a href="lexus1.html"id="lime_text">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back to the top&emsp;
+        <a href="lexus1.php"id="lime_text">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back to the top&emsp;
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a>
         </div>
     </div>

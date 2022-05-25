@@ -68,3 +68,13 @@ loginButton.addEventListener('click',(e)=>{
     bgForm.style.opacity = 0.4;
     bgForm.style.visibility = 'visible';
 });
+//
+// let registerButton = document.querySelector('#registerButton');
+// let regForm = document.querySelector('.register-form');
+// registerButton.addEventListener('click',(e)=>{
+//     console.log('a');
+//     regForm.style.opacity = 1;
+//     regForm.style.visibility = 'visible';
+//     bgForm.style.opacity = 0.4;
+//     bgForm.style.visibility = 'visible';
+// });

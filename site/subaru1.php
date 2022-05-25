@@ -14,14 +14,9 @@
          <div class="header">
              Japanese Domestic Market - SUBARU
          </div>
-         <div class="menu">
-            <a href="../homepage.html">Home</a>
-            <a href="toyota1.html">Toyota</a>
-            <a href="lexus1.html">Lexus</a>
-            <a href="subaru1.html">Subaru</a>
-            <a href="nissan1.html">Nissan</a>
-            <a href="mazda1.html">Mazda</a>
-         </div>
+         <?php
+  require('menu.php');
+  ?>
          <div class="content-large" >
             <h2 id="lime_text">What is SUBARU?</h2>
             <p style="color:#8E8E8E">&emsp;If you ask motorsports fans around the world about the one car which would be
@@ -63,7 +58,7 @@
         <a href="https://www.instagram.com/maenmobil/" id="white_text">&emsp;MAENMOBIL&emsp;</a>
         <a href="https://www.instagram.com/blackbird_pl/" id="white_text">&emsp;BLACKBIRD_PL&emsp;</a>
         <a href="https://www.instagram.com/explore/tags/bippu/" id="white_text">&emsp;#BIPPU&emsp;</a>
-        <a href="subaru1.html"id="lime_text">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back to the top&emsp;
+        <a href="subaru1.php"id="lime_text">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back to the top&emsp;
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a>
         </div>
     </div>

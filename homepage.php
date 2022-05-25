@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
 <title>JDS's go STUTUTU</title>
@@ -9,10 +8,10 @@
 
 </head>
 
-<body>
-    <div class="login-form">
+<body>      
+<!--    <div class="login-form">
         <form>
-          <h1>Login</h1>
+          <a href="../homepage.php" id="closetab">Close Tab</a>
           <div class="content">
             <div class="input-field">
               <input type="email" placeholder="Email" autocomplete="nope">
@@ -23,26 +22,33 @@
             <a href="#" class="link">Forgot Your Password?</a>
           </div>
           <div class="action">
-            <button>Register</button>
-            <button>Sign in</button>
+            <button><a href="./register.php">Register</a></button>
+            <button><a href="./loggedin.php">Sign in</a></button>
           </div>
         </form>
-      </div>
+      </div> -->
+
+   
+      
       <div id="bg-form"></div>
 
     <div class="container">
          <div class="header">
              Japanese Domestic Market - HOMEPAGE
-             <a id="blackgray_text" style="float:right">Login</a>
+             <?php
+              session_start();
+              if($_SESSION['errors'] == false && $_SESSION['conUser'] == ''){
+                echo '<a id="blackgray_text" style="float:right" href="site/login_page.php">Login</a>';
+              }else{
+                echo '<a id="blackgray_text" style="float:right" href="php/logout.php">Logout</a>';
+              }
+             ?>
          </div>
-         <div class="menu">
-            <a href="homepage.html">Home</a>
-            <a href="./site/toyota1.html">Toyota</a>
-            <a href="./site/lexus1.html">Lexus</a>
-            <a href="./site/subaru1.html">Subaru</a>
-            <a href="./site/nissan1.html">Nissan</a>
-            <a href="./site/mazda1.html">Mazda</a>
-         </div>
+         
+<?php
+  require('site/menu.php');
+  ?>
+
          <div class="content-large" >
             <h2 id="lime_text">What is Japanese Domestic Market?</h2>
             <p style="color:#8E8E8E">&emsp;There’s no doubt that car enthusiasts consider
@@ -81,7 +87,7 @@
         <a href="https://www.instagram.com/maenmobil/" id="white_text">&emsp;MAENMOBIL&emsp;</a>
         <a href="https://www.instagram.com/blackbird_pl/" id="white_text">&emsp;BLACKBIRD_PL&emsp;</a>
         <a href="https://www.instagram.com/explore/tags/bippu/" id="white_text">&emsp;#BIPPU&emsp;</a>
-        <a href="homepage.html"id="lime_text">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back to the top&emsp;
+        <a href="homepage.php"id="lime_text">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Back to the top&emsp;
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a>
         </div>
     </div>
